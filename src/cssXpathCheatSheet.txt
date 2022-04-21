@@ -1,0 +1,132 @@
+1.Using ID CSS Selector
+
+#id  or  tag#id ->CSS
+
+//tag[@id=’val] -> Xpath
+
+*************************
+
+2.Using Tag and Attribute and value
+
+tag[att=’value’]
+//tag[att=’value]
+
+tag[att=’value][att2=’value’] –CSS
+
+//tag[att=’value][att2=’value’]  - xpath
+
+*************************
+
+3.Absolute Path CSS Selector
+
+body>nav>form - CSS
+/body/nac/form - XPATH
+*************************
+
+
+4 Non Absolute(Relative) Path CSS Selector
+
+.class  .childclass1 .childclass2 - CSS
+
+>> normalize-space  inner text gibi!!
+
+//li[@id='menu-item-1227']//a[normalize-space()='Store']
+//button[normalize-space()='Search']
+
+//tag[@att=’value’] /div//tag[@att=’value’] - XPATH
+
+//tag1[@att1=’value’] //tag2[@att2=’value’] - XPATH
+
+*************************
+
+5.Containing Text of Attribute
+
+tag[att*=’text’] -  CSS
+
+//tag[contains(text(),’value’] - XPATH
+
+*************************
+
+6.Starting text of Attribute
+
+tag[att^=’text’]  - CSS
+
+//tag[starts-with(@id,’value’)] / div[1] -XPATH
+
+*************************
+
+7.Ending text of Attribute
+
+tag[att$=’ending text’] - CSS
+
+//tag[ends-with(@id,’value’)] / div[1]  -XPATH
+*************************
+
+8.Using comma operator between CSS Locators
+
+tag[att=’value’], tag2[att=’value2] - CSS
+
+//tag[@att=’value’ or @att2=’value2’] - XPATH
+
+//tag[@att=’value’ and @att2=’value2’] - XPATH
+
+//yukaridakiler hem ayni element hem fakrli elementleri getirebilir!
+
+*************************
+
+9.Using first-of-type CSS Selector
+
+tag#id > tag:first-of-type
+*************************
+
+10.Using nth of type
+
+tag:nth-of-type(n)
+
+*************************
+
+11.Selecting sibling of element
+
+Tag.class + siblingtag -CSS
+
+//tag[following-sibling::tag -XPATH
+
+*************************
+
+12.Using Not operator
+
+tag.class:not(#id)
+
+*************************
+
+13. Using nth child
+
+tag#id>:nth-child(2)
+tag:nth-child(number)
+
+*************************
+
+14.Chilt to parent
+
+//tag[@att=’value’] /parent::div
+
+*************************
+
+15. preceding/following/descendant (xpath)
+
+//tag[@att=’value’]//preceding:input
+
+//tag[@att=’value’]//following:input
+
+//tag[@att=’value’]//descendant:input
+
+*************************
+16.Table td-th xpath
+
+$x(“(//td)[2]”)[0]
+
+$x(“(//td)”)
+
+//tr[1] /td
+
+tr[@class=’value’][1] //td[@class=’value’]

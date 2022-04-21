@@ -1,0 +1,39 @@
+***Guest check out using driect bank transfer
+
+1.Navigate to Store
+
+2.Search with term "blue"
+
+3.Add blue shoes to cart
+
+4.Checkout
+
+***Login and checkout using driect bank transfer
+
+1.Naviaget to store
+
+2.Search with term "blue"
+
+3.Add blue shoes to cart
+
+4.Login
+
+5.Checkout
+
+////////////////////////////
+
+** Core principles
+
+less is more  ==> less ui actions are good!!!! network/timeout/cloud/machine/stale element
+
+Clear intention ==> make test cases atomic!!!! ui should  not be used to create test data!!!
+
+Independent ===> test cases should be independent
+
+Right Vs Wrong
+
+Best Vs Worst ==>> when someone says its best practice , it cannot be best practice , maybe it needs update, bu nedenle best ve worst u kullanma!!!!
+
+Good Vs Bad  ===> yerine iyi veya kotu olara k kullan
+
+The code will tell
